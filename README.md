@@ -2,7 +2,7 @@
 Cyclistic Bike_Share- Data analysis with SQL &amp; Power BI
 
 
-_The case study follows the six step data analysis process:_
+_The case study follows the six step data analysis process:
 
 ### ❓ [Ask](#step-1-ask)
 ### 💻 [Prepare](#step-2-prepare)
