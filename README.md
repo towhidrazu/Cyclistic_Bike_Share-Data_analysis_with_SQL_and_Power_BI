@@ -14,4 +14,4 @@ _The case study follows the six step data analysis process:_
 ### 🧗‍♀️ [Act](#step-6-act)
 
 
-##INTRODUCTION
+## INTRODUCTION
