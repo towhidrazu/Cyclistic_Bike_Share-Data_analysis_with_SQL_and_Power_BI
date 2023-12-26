@@ -26,11 +26,11 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 
 * Cyclistic: Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike. 
 
-Lily Moreno: The director of marketing and manager. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program. These may include email, social media, and other channels. 
+* Lily Moreno: The director of marketing and manager. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program. These may include email, social media, and other channels. 
 
-Cyclistic marketing analytics team: A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy. 
+* Cyclistic marketing analytics team: A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy. 
 
-Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
+* Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
 Consumers can purchase access to Cylictic bikes using three options:
 
 Single-ride pass: $1 to unlock, includes first 30 minutes ride, $0.17 per minute if exceeds the time limit. 
