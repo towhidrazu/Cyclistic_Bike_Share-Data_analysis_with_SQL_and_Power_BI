@@ -15,8 +15,10 @@ The data has been made available by Motivate International Inc. under this [lice
 
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of more than 600 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
-The company's marketing strategy relied on creating general awareness and appealing to broad consumer segments. The flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships help the company to attract more consumers and achieve its goal. 
-Cyclistic refers to its customers as "members" when they purchase an annual subscription and as "casual" riders when they purchase single-ride or full-day passes.
+The company's marketing strategy relied on creating general awareness and appealing to broad consumer segments. The flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships help the company to attract more consumers and achieve its goal.
+
+Cyclistic refers to its customers as 'casual' rides who purchase single-ride or full-day passes and as 'members' who purchase an annual subscription.
+
 Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a very good chance to convert casual riders into members.
 Characters and teams
 Cyclistic: Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike. 
