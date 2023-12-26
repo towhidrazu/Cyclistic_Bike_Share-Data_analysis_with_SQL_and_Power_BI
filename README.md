@@ -39,10 +39,6 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 * Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
 Consumers can purchase access to Cylictic bikes using three options:
 
-Single-ride pass: $1 to unlock, includes first 30 minutes ride, $0.17 per minute if exceeds the time limit. 
-Day Pass: $16.50 /day, unlimited 3-hour rides for 24- hours, $0.17 per minute if exceeds the time limit. 
-Annual Membership: $11*/month, billed upfront annually, unlimited 45 minutes rides. For further information see the pricing here. 
-
 _The case study follows the six step data analysis process:_
 
 ### ❓ [Ask](#step-1-ask)
