@@ -63,4 +63,4 @@ Three questions will guide the future marketing program:
 1. Identify the business task
 
 2. Consider key stakeholders
-* Director of Marketing (Lily Moreno), Marketing Analytics team
+- Director of Marketing (Lily Moreno), Marketing Analytics team
