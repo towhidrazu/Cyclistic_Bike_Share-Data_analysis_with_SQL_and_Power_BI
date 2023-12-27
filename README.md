@@ -61,6 +61,7 @@ Three questions will guide the future marketing program:
 **Key tasks**
 
 1. Identify the business task
+   
 * Finding out the difference in bike use between annual members and casual riders.
 
 3. Consider key stakeholders
