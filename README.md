@@ -70,3 +70,6 @@ Three questions will guide the future marketing program:
 **Deliverable**
 
 1. A clear statement of the business task
+
+For better understanding of the business task our work should be but not limited to answering the following questions:
+
