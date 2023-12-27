@@ -42,6 +42,12 @@ Consumers can purchase access to Cylictic bikes using three options:
 _The case study follows the six step data analysis process:_
 
 ### ❓ [Ask](#ask)
+Three questions will guide the future marketing program: 
+
+    1. How do annual members and casual riders use Cyclistic bikes differently?
+    2. Why would casual riders buy Cyclistic annual memberships? 
+    3. How can Cyclistic use digital media to influence casual riders to become members?
+
 ### 💻 [Prepare](#step-2-prepare)
 ### 🛠 [Process](#step-3-process)
 ### 📊 [Analyze](#step-4-analyze)
