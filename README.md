@@ -64,3 +64,7 @@ Three questions will guide the future marketing program:
 
 2. Consider key stakeholders
 - Director of Marketing & my manager (Lily Moreno), Marketing Analytics team (The team where I belong to)
+
+**Deliverable**
+
+1. A clear statement of the business task
