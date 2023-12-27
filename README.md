@@ -57,3 +57,9 @@ Three questions will guide the future marketing program:
 **Moreno** (the director of marketing and my manager) has assigned me the first question to answer:
 
 **How do annual members and casual riders use Cyclistic bikes differently?**
+
+**Key tasks**
+
+1. Identify the business task
+
+2. Consider key stakeholders
