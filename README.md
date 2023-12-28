@@ -101,6 +101,9 @@ I will use Cyclistic’s historical trip data to analyze and identify trends. Li
 * For the purpose of this case study, the datasets are appropriate and will enable me to answer the business questions. But data-privacy issues will prohibit me from using rider's personally identifiable information and this will prevent me from determining if casual riders live in the
 Cyclistic service area or if riders have purchased multiple single passes.
 
+
 **Deliverable**
 
 **A description of all data sources used**
+
+* Source of data: [Cyclistic Trip Data Download](https://divvy-tripdata.s3.amazonaws.com/index.html)
