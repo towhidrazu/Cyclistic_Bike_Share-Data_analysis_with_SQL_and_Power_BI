@@ -92,9 +92,9 @@ I will use Cyclistic’s historical trip data to analyze and identify trends. Li
 * Data has been downloaded and stored on my computer. A copy of the data has been produced to work with.
 
 2. Identify how it’s organized.
-
+* The data is organized in CSV (comma-separated values) format under zip file.
 
 3. Sort and filter the data.
-
+* For the purpose of my analysis I have downloaded 12 months file 
 
 4. Determine the credibility of the data
