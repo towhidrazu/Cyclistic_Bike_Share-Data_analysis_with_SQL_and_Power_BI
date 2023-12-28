@@ -98,4 +98,9 @@ I will use Cyclistic’s historical trip data to analyze and identify trends. Li
 * For the purpose of my analysis I have downloaded most recent 12 months file (October 2022 to September 2023). Unzip those and organize those in a separate folder.
 
 4. Determine the credibility of the data
-* 
+* For the purpose of this case study, the datasets are appropriate and will enable me to answer the business questions. But data-privacy issues will prohibit me from using rider's personally identifiable information and this will prevent me from determining if casual riders live in the
+Cyclistic service area or if riders have purchased multiple single passes.
+
+**Deliverable**
+
+**A description of all data sources used**
