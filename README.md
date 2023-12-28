@@ -42,11 +42,11 @@ Consumers can purchase access to Cylictic bikes using three options:
 _The case study follows the six step data analysis process:_
 
 ### ❓ [Ask](#ask)
-### 💻 [Prepare](#step-2-prepare)
-### 🛠 [Process](#step-3-process)
-### 📊 [Analyze](#step-4-analyze)
-### 📋 [Share](#step-5-share)
-### 🧗‍♀️ [Act](#step-6-act)
+### 💻 [Prepare](#prepare)
+### 🛠 [Process](#process)
+### 📊 [Analyze](#analyze)
+### 📋 [Share](#share)
+### 🧗‍♀️ [Act](#act)
 
 ## Ask
 Three questions will guide the future marketing program:
@@ -82,4 +82,5 @@ For completion of the business task our effort should be answering the following
 - Between weekdays and weekend when both types of users use bikes most?
 
 
+## Prepare
 
