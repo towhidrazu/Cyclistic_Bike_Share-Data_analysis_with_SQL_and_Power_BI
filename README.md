@@ -84,3 +84,11 @@ For completion of the business task our effort should be answering the following
 
 ## Prepare
 
+I will use Cyclistic’s historical trip data to analyze and identify trends. Link for Cyclistic trip data and information about license is given above.
+
+**Key tasks**
+
+1. Download data and store it appropriately.
+2. Identify how it’s organized.
+3. Sort and filter the data.
+4. Determine the credibility of the data
