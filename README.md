@@ -64,7 +64,7 @@ Three questions will guide the future marketing program:
    
 * Finding out the difference in bike use between annual members and casual riders.
 
-3. Consider key stakeholders
+2. Consider key stakeholders
 - Director of Marketing & my manager (Lily Moreno), Marketing Analytics team (The team where I belong to)
 
 **Deliverable**
