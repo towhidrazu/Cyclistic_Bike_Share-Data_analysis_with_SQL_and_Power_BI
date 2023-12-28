@@ -95,6 +95,7 @@ I will use Cyclistic’s historical trip data to analyze and identify trends. Li
 * The data is organized in CSV (comma-separated values) format under zip file.
 
 3. Sort and filter the data.
-* For the purpose of my analysis I have downloaded 12 months file 
+* For the purpose of my analysis I have downloaded most recent 12 months file (October 2022 to September 2023). Unzip those and organize those in a separate folder.
 
 4. Determine the credibility of the data
+* 
