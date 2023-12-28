@@ -71,7 +71,7 @@ Three questions will guide the future marketing program:
 
 **A clear statement of the business task**
 
-For better understanding of the business task our work should be but not limited to answering the following questions:
+For completion of the business task our effort should be answering the following questions:
 
 1. 
 
