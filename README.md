@@ -73,5 +73,6 @@ Three questions will guide the future marketing program:
 
 For completion of the business task our effort should be answering the following questions:
 
-1. 
+- what' the total and average ride duration of the both types of users?
+- 
 
