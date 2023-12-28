@@ -73,6 +73,13 @@ Three questions will guide the future marketing program:
 
 For completion of the business task our effort should be answering the following questions:
 
-- What' the total and average ride duration of the both types of users?
-- 
+- What is the total and average ride duration of the both types of users?
+- What is the total and average ride duration of both types of users based on week of the day and based of the month of the year.
+- What is the numbers of riders per hour for both types of users?
+- What is the peak hour for both types of users?
+- What are mostly used stations for both types of users?
+- Which bikes are preferred  by the users?
+- Between weekdays and weekend when both types of users use bikes most?
+
+
 
