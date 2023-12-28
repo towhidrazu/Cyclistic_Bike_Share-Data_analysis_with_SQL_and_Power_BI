@@ -89,7 +89,7 @@ I will use Cyclistic’s historical trip data to analyze and identify trends. Li
 **Key tasks**
 
 1. Download data and store it appropriately.
-* Data has been downloaded and copies have been stored securely on my computer
+* Data has been downloaded and stored on my computer. A copy of the data has been produced to work with.
 
 3. Identify how it’s organized.
 4. Sort and filter the data.
