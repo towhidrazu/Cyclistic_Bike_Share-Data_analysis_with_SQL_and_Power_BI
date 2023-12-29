@@ -107,3 +107,37 @@ Cyclistic service area or if riders have purchased multiple single passes.
 **A description of all data sources used**
 
 * Source of data: [Cyclistic Trip Data Download](https://divvy-tripdata.s3.amazonaws.com/index.html)
+
+**CREATING TABLE OF 13 COLUMNS TO IMPORT DATA FROM CSV FILES TO POSTGRE SQL**
+
+'''
+CREATE TABLE october (  
+
+ride_id VARCHAR(50),  
+
+rideable_type TEXT,  
+
+started_at TIMESTAMP,  
+
+ended_at TIMESTAMP,  
+
+start_station_name VARCHAR(100),  
+
+start_station_id VARCHAR(100),  
+
+end_station_name VARCHAR (100),  
+
+end_station_id VARCHAR (100),  
+
+start_lat DECIMAL,  
+
+start_lng DECIMAL,  
+
+end_lat DECIMAL,  
+
+end_lng DECIMAL,  
+
+member_casual TEXT,  
+
+PRIMARY KEY (ride_id))  
+'''
