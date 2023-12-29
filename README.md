@@ -141,5 +141,4 @@ end_lng DECIMAL, 
 member_casual TEXT,  
 
 PRIMARY KEY (ride_id))
-
 ```
