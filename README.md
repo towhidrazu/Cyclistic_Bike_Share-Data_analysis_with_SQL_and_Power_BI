@@ -111,6 +111,7 @@ Cyclistic service area or if riders have purchased multiple single passes.
 **CREATING TABLE OF 13 COLUMNS TO IMPORT DATA FROM CSV FILES TO POSTGRE SQL**
 
 '''
+
 CREATE TABLE october (  
 
 ride_id VARCHAR(50),  
@@ -139,5 +140,6 @@ end_lng DECIMAL, 
 
 member_casual TEXT,  
 
-PRIMARY KEY (ride_id))  
+PRIMARY KEY (ride_id))
+
 '''
