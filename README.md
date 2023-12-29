@@ -110,7 +110,7 @@ Cyclistic service area or if riders have purchased multiple single passes.
 
 **CREATING TABLE OF 13 COLUMNS TO IMPORT DATA FROM CSV FILES TO POSTGRE SQL**
 
-'''
+```
 
 CREATE TABLE october (  
 
@@ -142,4 +142,4 @@ member_casual TEXT, 
 
 PRIMARY KEY (ride_id))
 
-'''
+```
