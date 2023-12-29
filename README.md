@@ -111,6 +111,7 @@ Cyclistic service area or if riders have purchased multiple single passes.
 **CREATING TABLE OF 13 COLUMNS TO IMPORT DATA FROM CSV FILES TO POSTGRE SQL**
 
 ```
+# CODES for creating table with ride_id as Primary Key:
 
 CREATE TABLE october (  
 
