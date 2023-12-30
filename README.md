@@ -87,6 +87,8 @@ For completion of the business task our effort should be answering the following
 
 ## Prepare
 
+[Back to top](#introduction)
+
 I will use Cyclistic’s historical trip data to analyze and identify trends. Link for Cyclistic trip data and information about license is given above.
 
 **Key tasks**
@@ -199,3 +201,6 @@ CREATE TABLE fullyear_backup AS TABLE fullyear
 ```
 
 ## Process
+
+[Back to top](#introduction)
+
