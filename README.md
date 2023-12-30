@@ -144,6 +144,7 @@ member_casual TEXT, 
 PRIMARY KEY (ride_id))
 ```
 
+
 **COPY data from CSV FILE TO newly created table**
 
 ```
@@ -155,5 +156,5 @@ FROM 'E:\cyclistic\202210-divvy-tripdata.csv'  # location of CSV file in compu
 
 DELIMITER ','  
 
-CSV HEADER
+CSV HEADER  # As CSV file containes header row
 ```
