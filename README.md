@@ -182,14 +182,14 @@ select the CSV file -> From Options, turn on Header -> Press Ok 
 ```
 
 
-**Renaming 'october' table as 'fullyear' table
+**Renaming 'october' table as 'fullyear' table**
 
 ```
 ALTER TABLE october RENAME TO fullyear
 ```
 
 
-**Make a duplicate table named 'fullyear_backup' from existing table 'fullyear' in case we need in future **
+**Make a duplicate table named 'fullyear_backup' from existing table 'fullyear' in case we need in future**
 
 ```
 CREATE TABLE fullyear_backup AS TABLE fullyear
