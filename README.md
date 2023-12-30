@@ -206,3 +206,8 @@ CREATE TABLE fullyear_backup AS TABLE fullyear
 
 [Back to top](#introduction)
 
+For this analysis I will be using SQL (PostgreSQL) and Power BI.
+
+The whole 12 months of data contains 5+ millions of rows making it a huge dataset. To work with such a hugh dataset efficiently SQL is one of the best options as it can handle massive amount of data in good pace.
+
+For visualization part I will be using MS Power BI which is a very widely used and powerful business intelligence tool and can produce effective visualizations.
