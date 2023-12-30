@@ -254,4 +254,60 @@ Or this could happen due to any error.
 For the purpose of our study we will discard those values from analysis.
 ```
 
+**Creating a new table named fullyear1 for analysis with 5 new columns (ride_length, day_of_week, day_name, month_of_year, month_name) in addition to original columns filtering out ride length from 1 second to 24 hours.**
 
+```
+CREATE TABLE fullyear1 AS ( 
+
+SELECT *, (ended_at - started_at) AS ride_length, EXTRACT('DOW' FROM started_at) AS day_of_week,  
+
+CASE WHEN EXTRACT('DOW' FROM started_at) = '0' THEN 'Sunday' 
+
+     WHEN EXTRACT('DOW' FROM started_at) = '1' THEN 'Monday' 
+
+ WHEN EXTRACT('DOW' FROM started_at) = '2' THEN 'Tuesday' 
+
+ WHEN EXTRACT('DOW' FROM started_at) = '3' THEN 'Wednesday' 
+
+ WHEN EXTRACT('DOW' FROM started_at) = '4' THEN 'Thursday' 
+
+ WHEN EXTRACT('DOW' FROM started_at) = '5' THEN 'Friday' 
+
+ WHEN EXTRACT('DOW' FROM started_at) = '6' THEN 'Saturday' 
+
+ END AS day_name,  
+
+ EXTRACT('MON' FROM started_at) AS month_of_year, 
+
+CASE WHEN EXTRACT('MON' FROM started_at) = '1' THEN 'January' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '2' THEN 'February' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '3' THEN 'March' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '4' THEN 'April' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '5' THEN 'May' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '6' THEN 'June' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '7' THEN 'July' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '8' THEN 'August' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '9' THEN 'September' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '10' THEN 'October' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '11' THEN 'November' 
+
+ WHEN EXTRACT('MON' FROM started_at) = '12' THEN 'December' 
+
+END AS month_name 
+
+FROM fullyear 
+
+WHERE (ended_at - started_at) BETWEEN '00:00:01' AND '24:00:00' 
+
+ORDER BY started_at) 
+```
