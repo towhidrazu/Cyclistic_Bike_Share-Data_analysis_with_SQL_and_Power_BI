@@ -311,3 +311,10 @@ WHERE (ended_at - started_at) BETWEEN '00:00:01' AND '24:00:00'
 
 ORDER BY started_at) 
 ```
+
+**Now our dataset fullyear1 is ready for analyze. Thus we proceed to ANALYZE section.
+
+
+## Analyze
+
+[Back to top](#introduction)
