@@ -49,6 +49,9 @@ _The case study follows the six step data analysis process:_
 ### 🧗‍♀️ [Act](#act)
 
 ## Ask
+
+[Back to top](#introduction)
+
 Three questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
