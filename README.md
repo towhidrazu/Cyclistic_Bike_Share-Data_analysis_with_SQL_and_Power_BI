@@ -195,3 +195,4 @@ ALTER TABLE october RENAME TO fullyear
 CREATE TABLE fullyear_backup AS TABLE fullyear
 ```
 
+## Process
