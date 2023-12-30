@@ -246,9 +246,12 @@ FROM fullyear
 WHERE (ended_at - started_at) < '00:00:01' OR (ended_at - started_at) > '24:00:00'
 ORDER BY ride_length
 
-# From 17640 resulted values I can see this dataset containes 11695 negative and zero value. And rest 5945 row contains ride length more than 24 hours. These might happen due to testing or checking pupose. Or this could happen due to any error.
+# From 17640 resulted values I can see this dataset containes 11695 negative and zero value.
+And rest 5945 row contains ride length more than 24 hours.
+These might happen due to testing or checking pupose.
+Or this could happen due to any error.
 
-For the purpose of our study we will discard those values from analysis
+For the purpose of our study we will discard those values from analysis.
 ```
 
 
