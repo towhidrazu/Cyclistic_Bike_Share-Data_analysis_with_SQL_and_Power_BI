@@ -234,6 +234,10 @@ GROUP BY ride_id
 HAVING COUNT(*) > 1
 
 Result: null
+
+# Thus, this dataset doesn't contain any duplicate value.
 ```
+
+
 
 
