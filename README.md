@@ -214,7 +214,7 @@ For visualization part I will be using MS Power BI which is a very widely used a
 
 **Deliverable**
 
-Documentation of any cleaning or manipulation of data
+**Documentation of any cleaning or manipulation of data**
 
 Checking no. of rows in full year table
 
@@ -224,4 +224,16 @@ FROM fullyear
 
 Ans: 5656759
 ```
+
+Now I will check whether this dataset contains any duplicate entry based on column 'ride_id'
+
+```
+SELECT ride_id, COUNT(*)
+FROM fullyear1
+GROUP BY ride_id
+HAVING COUNT(*) > 1
+
+Result: null
+```
+
 
