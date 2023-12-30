@@ -174,7 +174,8 @@ LIMIT 10
 **Add November & subsequest months (11 months) data to existing table named october (This way we bring all 12 months (October 2022 to September 2023) data under 1 table)**
 
 ```
-From PGadmin right click on table named October -> import/export data -> Under General from File Name, select the CSV file -> From Options, turn on Header -> Press Ok  
+From PGadmin right click on table named October -> import/export data -> Under General from File Name,
+select the CSV file -> From Options, turn on Header -> Press Ok  
 
 # Note: This can also be done using Union All command after creating & importing data for each month's table.
 ```
