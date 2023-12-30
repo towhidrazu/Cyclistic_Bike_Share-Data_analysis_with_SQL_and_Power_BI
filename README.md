@@ -175,6 +175,7 @@ LIMIT 10
 
 ```
 From PGadmin right click on table named October -> import/export data -> Under General from File Name,
+
 select the CSV file -> From Options, turn on Header -> Press Ok  
 
 # Note: This can also be done using Union All command after creating & importing data for each month's table.
