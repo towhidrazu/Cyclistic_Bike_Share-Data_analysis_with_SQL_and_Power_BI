@@ -216,3 +216,12 @@ For visualization part I will be using MS Power BI which is a very widely used a
 
 Documentation of any cleaning or manipulation of data
 
+Checking no. of rows in full year table
+
+```
+SELECT COUNT(*)
+FROM fullyear
+
+Ans: 5656759
+```
+
