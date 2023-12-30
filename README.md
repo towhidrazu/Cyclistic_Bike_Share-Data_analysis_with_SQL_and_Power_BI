@@ -180,3 +180,11 @@ select the CSV file -> From Options, turn on Header -> Press Ok 
 
 # Note: This can also be done using Union All command after creating & importing data for each month's table.
 ```
+
+
+**Renaming 'october' table as 'fullyear' table
+
+```
+ALTER TABLE october RENAME TO fullyear
+```
+
