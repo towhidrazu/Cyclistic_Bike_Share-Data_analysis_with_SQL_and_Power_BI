@@ -222,7 +222,7 @@ Checking no. of rows in full year table
 SELECT COUNT(*)
 FROM fullyear
 
-Ans: 5656759
+Ans: 5674399
 ```
 
 Now I will check whether this dataset contains any duplicate entry based on column 'ride_id'
