@@ -147,6 +147,8 @@ PRIMARY KEY (ride_id))
 
 **COPY data from CSV FILE TO newly created table**
 
+It is mentionable that in the table named 'october' we have loaded only data of october. In next step we will add rest 11 months data in this 'october' table. Then we will rename the 'october' table as 'fullyear'.
+
 ```
 COPY october(ride_id, rideable_type, started_at, ended_at, start_station_name,  
 
@@ -167,4 +169,12 @@ SELECT * 
 FROM october  
 
 LIMIT 10
+```
+
+**Add November & subsequest months (11 months) data to existing table named october (This way we bring all 12 months (October 2022 to September 2023) data under 1 table)**
+
+```
+From PGadmin right click on table named October -> import/export data -> Under General from File Name, select the CSV file -> From Options, turn on Header -> Press Ok  
+
+# Note: This can also be done using Union All command after creating & importing data for each month's table.
 ```
