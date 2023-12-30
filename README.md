@@ -167,6 +167,7 @@ CSV HEADER  # As CSV file containes header row
 ```
 
 **To view first few rows of the whole table**
+Now that I have imported october 2022 data to my newly created SQL table I will be using, I will take a look at at a glance to familiarize myself with the data and to check for errors.
 
 ```
 SELECT *  
