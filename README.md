@@ -113,7 +113,7 @@ Cyclistic service area or if riders have purchased multiple single passes.
 ```
 # CODES for creating table with ride_id as Primary Key:
 
-CREATE TABLE october (  
+CREATE TABLE fullyear (  
 
 ride_id VARCHAR(50),  
 
@@ -142,4 +142,18 @@ end_lng DECIMAL, 
 member_casual TEXT,  
 
 PRIMARY KEY (ride_id))
+```
+
+**COPY data from CSV FILE TO newly created table**
+
+```
+COPY fullyear(ride_id, rideable_type, started_at, ended_at, start_station_name,  
+
+start_station_id, end_station_name, end_station_id, start_lat,  start_lng, end_lat, end_lng, member_casual)  
+
+FROM 'E:\cyclistic\202210-divvy-tripdata.csv'  # location of CSV file in computer
+
+DELIMITER ','  
+
+CSV HEADER
 ```
