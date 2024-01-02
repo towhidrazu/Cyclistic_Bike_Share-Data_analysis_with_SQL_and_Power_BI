@@ -251,7 +251,7 @@ And rest 5945 row contains ride length more than 24 hours.
 These might happen due to testing or checking pupose.
 Or this could happen due to any error.
 
-For the purpose of our study we will discard those 17640 values from analysis.
+For the purpose of our study we will discard those 17640 values from analysis. These are 0.31% of the total data.
 ```
 
 **Creating a new table named fullyear1 for analysis with 5 new columns (ride_length, day_of_week, day_name, month_of_year, month_name) in addition to original columns filtering out ride length from 1 second to 24 hours.**
