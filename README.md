@@ -312,6 +312,15 @@ WHERE (ended_at - started_at) BETWEEN '00:00:01' AND '24:00:00'
 ORDER BY started_at) 
 ```
 
+*** Let's have a quick look on first 10 rows of data**
+
+```
+SELECT *
+FROM fullyear1
+LIMIT 10
+```
+![TopTenRows](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/TopTenRows.png)
+
 **Now our dataset fullyear1 is ready for analyze. Thus we proceed to ANALYZE section.**
 
 
