@@ -324,6 +324,6 @@ LIMIT 10
 **Now our dataset fullyear1 is ready to analyze. Thus we proceed to ANALYZE section.**
 
 
-## Analyze
+## Step 4: Analyze
 
 [Back to top](#introduction)
