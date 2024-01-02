@@ -321,7 +321,7 @@ LIMIT 10
 ```
 ![TopTenRows](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/TopTenRows.png)
 
-**Now our dataset fullyear1 is ready for analyze. Thus we proceed to ANALYZE section.**
+**Now our dataset fullyear1 is ready to analyze. Thus we proceed to ANALYZE section.**
 
 
 ## Analyze
