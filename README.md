@@ -41,14 +41,14 @@ Consumers can purchase access to Cylictic bikes using three options:
 
 _The case study follows the six step data analysis process:_
 
-### ❓ [Ask](#ask)
-### 💻 [Prepare](#prepare)
-### 🛠 [Process](#process)
-### 📊 [Analyze](#analyze)
-### 📋 [Share](#share)
-### 🧗‍♀️ [Act](#act)
+### ❓ [Ask](#step-1-ask)
+### 💻 [Prepare](#step-2-prepare)
+### 🛠 [Process](#step-3-process)
+### 📊 [Analyze](#step-4-analyze)
+### 📋 [Share](#step-5-share)
+### 🧗‍♀️ [Act](#step-6-act)
 
-## Ask
+## Step 1: Ask
 
 [Back to top](#introduction)
 
