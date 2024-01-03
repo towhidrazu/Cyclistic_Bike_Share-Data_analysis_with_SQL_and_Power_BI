@@ -354,8 +354,21 @@ FROM fullyear1
 GROUP BY member_casual
 
 RESULT:
+
 Casual: 1 day 713964:46:09
 Member:	720377:57:18
 ```
 
 **What is the average ride duration of the both types of users?**
+
+```
+SELECT member_casual AS member_type, avg(ride_length)
+FROM fullyear1
+GROUP BY member_casual
+
+RESULT:
+
+Casual: 00:20:37.304156
+Member: 00:12:04.529509
+
+```
