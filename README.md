@@ -327,3 +327,9 @@ LIMIT 10
 ## Step 4: Analyze
 
 [Back to top](#introduction)
+
+**All the required data are now in one SQL table 'fullyear1' and ready for exploration.**
+
+Our Analyze section comprises of answering all the questions we framed in Ask (step 1) phase to attain business task.
+
+**
