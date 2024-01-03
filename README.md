@@ -76,6 +76,7 @@ Three questions will guide the future marketing program:
 
 For completion of the business task our effort should be answering the following questions:
 
+- What is the total and average numbers of rides of the both types of users?
 - What is the total and average ride duration of the both types of users?
 - What is the total and average ride duration of both types of users based on week of the day and based of the month of the year.
 - What is the numbers of riders per hour for both types of users?
@@ -332,4 +333,10 @@ LIMIT 10
 
 Our Analyze section comprises of answering all the questions we framed in Ask (step 1) phase to attain business task.
 
-**
+**What is the total numbers of rides of the both types of users?**
+
+**What is the total average numbers of rides of the both types of users?**
+
+**What is the total ride duration of the both types of users?**
+
+**What is the average ride duration of the both types of users?**
