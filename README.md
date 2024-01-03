@@ -340,12 +340,22 @@ SELECT member_casual AS member_type, count(*)
 FROM fullyear1
 GROUP BY member_casual
 
-Answer:
+RESULT:
 
 Casual: 2077387
 Member: 3579372
 ```
 
 **What is the total ride duration of the both types of users?**
+
+```
+SELECT member_casual AS member_type, sum(ride_length)
+FROM fullyear1
+GROUP BY member_casual
+
+RESULT:
+Casual: 1 day 713964:46:09
+Member:	720377:57:18
+```
 
 **What is the average ride duration of the both types of users?**
