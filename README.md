@@ -430,3 +430,32 @@ day_name             member        casual
 "Friday"	"104268:03:13"	"105656:17:24"
 "Saturday"	"166486:24:02"	"107223:27:43"
 ```
+
+**What is the average rides duration of both types of users based on the day of the week?**
+
+```
+SELECT *
+FROM crosstab('SELECT day_name, member_casual AS rider_type, AVG(ride_length) AS rides
+FROM fullyear1
+GROUP BY day_name, member_casual
+ORDER BY CASE
+	WHEN day_name = ''Sunday'' THEN 1
+	WHEN day_name = ''Monday'' THEN 2
+	WHEN day_name = ''Tuesday'' THEN 3
+	WHEN day_name = ''Wednesday'' THEN 4
+	WHEN day_name = ''Thursday'' THEN 5
+	WHEN day_name = ''Friday'' THEN 6
+	WHEN day_name = ''Saturday'' THEN 7
+	END')
+	AS (day_name text, member interval, casual interval)
+
+RESULT:
+day_name             member                  casual
+"Sunday"	"00:23:56.275441"	"00:13:26.969805"
+"Monday"	"00:20:14.923192"	"00:11:28.075472"
+"Tuesday"	"00:11:34.009075"	"00:18:18.348372"
+"Wednesday"	"00:11:29.778405"	"00:17:26.867913"
+"Thursday"	"00:18:05.289257"	"00:11:33.601305"
+"Friday"	"00:12:03.165798"	"00:20:05.579185"
+"Saturday"	"00:23:21.69237"	"00:13:27.765472"
+```
