@@ -392,7 +392,7 @@ ORDER BY CASE
 
 
 RESULT:
- day_name member   casual
+ day_name       member  casual
 "Sunday"	337183	400790
 "Monday"	236159	485185
 "Tuesday"	552590	239686
@@ -403,3 +403,30 @@ RESULT:
 ```
 
 **What is the total rides duration of both types of users based on the day of the week?**
+
+```
+SELECT *
+FROM crosstab('SELECT day_name, member_casual AS rider_type, SUM(ride_length) AS rides
+FROM fullyear1
+GROUP BY day_name, member_casual
+ORDER BY CASE
+	WHEN day_name = ''Sunday'' THEN 1
+	WHEN day_name = ''Monday'' THEN 2
+	WHEN day_name = ''Tuesday'' THEN 3
+	WHEN day_name = ''Wednesday'' THEN 4
+	WHEN day_name = ''Thursday'' THEN 5
+	WHEN day_name = ''Friday'' THEN 6
+	WHEN day_name = ''Saturday'' THEN 7
+	END')
+	AS (day_name text, member interval, casual interval)
+
+RESULT:
+day_name             member        casual
+"Sunday"	"134524:21:02"	"89840:23:48"
+"Monday"	"79698:37:26"	"92734:24:58"
+"Tuesday"	"106528:27:55"	"73127:25:28"
+"Wednesday"	"109195:33:43"	"1 day 72180:13:29"
+"Thursday"	"82291:27:18"	"110587:35:58"
+"Friday"	"104268:03:13"	"105656:17:24"
+"Saturday"	"166486:24:02"	"107223:27:43"
+```
