@@ -78,7 +78,7 @@ For completion of the business task our effort should be answering the following
 
 - What is the total numbers of rides of the both types of users?
 - What is the total and average ride duration of the both types of users?
-- What is the total and average ride duration of both types of users based on the day of the week and based of the month of the year.
+- What is the total numbers of rides, total and average ride duration of both types of users based on the day of the week and based of the month of the year.
 - What is the numbers of riders per hour for both types of users?
 - What is the peak hour for both types of users?
 - What are mostly used stations for both types of users?
@@ -372,3 +372,34 @@ Casual: 00:20:37.304156
 Member: 00:12:04.529509
 
 ```
+**What is the total numbers of rides of both types of users based on the day of the week?**
+
+```
+SELECT *
+FROM crosstab('SELECT day_name, member_casual AS rider_type, COUNT(*) AS rides
+FROM fullyear1
+GROUP BY day_name, member_casual
+ORDER BY CASE
+	WHEN day_name = ''Sunday'' THEN 1
+	WHEN day_name = ''Monday'' THEN 2
+	WHEN day_name = ''Tuesday'' THEN 3
+	WHEN day_name = ''Wednesday'' THEN 4
+	WHEN day_name = ''Thursday'' THEN 5
+	WHEN day_name = ''Friday'' THEN 6
+	WHEN day_name = ''Saturday'' THEN 7
+	END')
+	AS (day_name text, member bigint, casual bigint)
+
+
+RESULT:
+ day_name member   casual
+"Sunday"	337183	400790
+"Monday"	236159	485185
+"Tuesday"	552590	239686
+"Wednesday"	569899	248298
+"Thursday"	272968	573983
+"Friday"	519058	315502
+"Saturday"	427591	477867
+```
+
+**What is the total rides duration of both types of users based on the day of the week?**
