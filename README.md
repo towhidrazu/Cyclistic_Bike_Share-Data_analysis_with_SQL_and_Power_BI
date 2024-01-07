@@ -387,7 +387,8 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END')
+	END'
+	, 'values (''casual''), (''member'')')
 	AS (day_name text, member bigint, casual bigint)
 
 
@@ -417,7 +418,8 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END')
+	END'
+	, 'values (''casual''), (''member'')')
 	AS (day_name text, member interval, casual interval)
 
 RESULT:
@@ -446,7 +448,8 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END')
+	END'
+	, 'values (''casual''), (''member'')')
 	AS (day_name text, member interval, casual interval)
 
 RESULT:
