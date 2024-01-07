@@ -387,7 +387,7 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END'
+	END'                        #Custom sorting
 	, 'values (''casual''), (''member'')')
 	AS (day_name text, member bigint, casual bigint)
 
@@ -418,7 +418,7 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END'
+	END'                          #Custom sorting
 	, 'values (''casual''), (''member'')')
 	AS (day_name text, member interval, casual interval)
 
@@ -448,7 +448,7 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END'
+	END'                #Custom sorting
 	, 'values (''casual''), (''member'')')
 	AS (day_name text, member interval, casual interval)
 
@@ -461,4 +461,34 @@ day_name             member                  casual
 "Thursday"	"00:18:05.289257"	"00:11:33.601305"
 "Friday"	"00:12:03.165798"	"00:20:05.579185"
 "Saturday"	"00:23:21.69237"	"00:13:27.765472"
+```
+
+**What is the total numbers of rides of both types of users based on the months of the year?**
+
+```
+SELECT *
+FROM crosstab('SELECT month_name, member_casual, COUNT(*) AS rides
+FROM fullyear1
+GROUP BY month_name, member_casual
+ORDER BY array_position(array[''January'',''February'',''March'',''April'',
+			  ''May'',''June'', ''July'',''August'',''September'',''October''
+			  ,''November'',''December''],month_name)   #Custom sorting
+			   , member_casual'
+	, 'values (''casual''), (''member'')')
+	AS (month_name text, casual bigint, member bigint)
+
+RESULT:
+month_name      casual  member
+"January"	39917	150258
+"February"	42930	147397
+"March"	        62067	196432
+"April"	        146974	279241
+"May"	        229785	363718
+"June"	        300517	418249
+"July"	        330334	436039
+"August"	310040	460240
+"September"	260819	404473
+"October"	208639	349559
+"November"	100570	236891
+"December"	44795	136875
 ```
