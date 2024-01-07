@@ -496,3 +496,67 @@ month_name      casual  member
 "November"	100570	236891
 "December"	44795	136875
 ```
+
+**What is the total rides duration of both types of users based on the months of the year?**
+
+```
+SELECT *
+FROM crosstab('SELECT month_name, member_casual, SUM(ride_length) AS rides
+FROM fullyear1
+GROUP BY month_name, member_casual
+ORDER BY array_position(array[''January'',''February'',''March'',''April'',
+			  ''May'',''June'', ''July'',''August'',''September'',''October''
+			  ,''November'',''December''],month_name)                       #Custom sorting
+			  , member_casual'
+	, 'values (''casual''), (''member'')')
+	AS (month_name text, casual interval, member interval)
+
+RESULT:
+month_name        casual            member
+"January"	"9114:32:16"	"25206:25:17"
+"February"	"11462:24:48"	"25703:08:17"
+"March"	        "15883:58:37"	"33368:30:08"
+"April"	        "50729:45:38"	"53335:36:30"
+"May"	    "1 day 86287:37:00"	"77575:42:00"
+"June"   	"109023:39:31"	"89597:47:01"
+"July"	        "125904:07:32"	"95906:48:44"
+"August"	"113316:33:56"	"100967:35:47"
+"September"	"91951:29:36"	"85070:57:35"
+"October"	"64229:43:31"	"67200:03:20"
+"November"	"26056:23:38"	"42863:03:55"
+"December"	"10004:30:06"	"23582:18:44"
+
+```
+
+**What is the average rides duration of both types of users based on the months of the year?**
+
+```
+SELECT *
+FROM crosstab('SELECT month_name, member_casual, AVG(ride_length) AS rides
+FROM fullyear1
+GROUP BY month_name, member_casual
+ORDER BY array_position(array[''January'',''February'',''March'',''April'',
+			  ''May'',''June'', ''July'',''August'',''September'',''October''
+			  ,''November'',''December''],month_name)      #Custom sorting
+			  , member_casual'
+	, 'values (''casual''), (''member'')')        
+	AS (month_name text, casual interval, member interval)
+
+
+RESULT:
+
+month_name           casual                  member
+"January"	"00:13:42.014079"	"00:10:03.915379"
+"February"	"00:16:01.208665"	"00:10:27.769202"
+"March"	        "00:15:21.299837"	"00:10:11.542967"
+"April"	        "00:20:42.581259"	"00:11:27.607443"
+"May"	        "00:22:32.228475"	"00:12:47.827053"
+"June"	        "00:21:46.033173"	"00:12:51.196156"
+"July"	        "00:22:52.110809"	"00:13:11.820282"
+"August"	"00:21:55.764534"	"00:13:09.769136"
+"September"	"00:21:09.176617"	"00:12:37.171566"
+"October"	"00:18:28.263608"	"00:11:32.072583"
+"November"	"00:15:32.713712"	"00:10:51.384118"
+"December"	"00:13:24.022904"	"00:10:20.247116"
+
+```
