@@ -78,7 +78,7 @@ For completion of the business task our effort should be answering the following
 
 - What is the total numbers of rides of the both types of users?
 - What is the total and average ride duration of the both types of users?
-- What is the total numbers of rides, total and average ride duration of both types of users based on the day of the week and based of the month of the year.
+- What is the total numbers of rides, total and average ride duration of both types of users based on the day of the week and based of the month of the year?
 - What is the numbers of riders per hour for both types of users?
 - What is the peak hour for both types of users?
 - What are mostly used stations for both types of users?
