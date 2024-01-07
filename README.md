@@ -387,19 +387,20 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END'                        #Custom sorting
+	END                                  # Custom Sorting
+	, member_casual'
 	, 'values (''casual''), (''member'')')
-	AS (day_name text, member bigint, casual bigint)
+	AS (day_name text, casual bigint, member bigint)
 
 
 RESULT:
- day_name       member  casual
+ day_name       casual  member
 "Sunday"	337183	400790
 "Monday"	236159	485185
-"Tuesday"	552590	239686
-"Wednesday"	569899	248298
+"Tuesday"	239686	552590
+"Wednesday"	248298	569899
 "Thursday"	272968	573983
-"Friday"	519058	315502
+"Friday"	315502	519058
 "Saturday"	427591	477867
 ```
 
@@ -418,18 +419,19 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END'                          #Custom sorting
+	END                                      # Custom Sorting
+	, member_casual'
 	, 'values (''casual''), (''member'')')
-	AS (day_name text, member interval, casual interval)
+	AS (day_name text, casual interval, member interval)
 
 RESULT:
-day_name             member        casual
+day_name             casual        member
 "Sunday"	"134524:21:02"	"89840:23:48"
 "Monday"	"79698:37:26"	"92734:24:58"
-"Tuesday"	"106528:27:55"	"73127:25:28"
-"Wednesday"	"109195:33:43"	"1 day 72180:13:29"
+"Tuesday"	"73127:25:28"	"106528:27:55"
+"Wednesday"	"1 day 72180:13:29"	"109195:33:43"
 "Thursday"	"82291:27:18"	"110587:35:58"
-"Friday"	"104268:03:13"	"105656:17:24"
+"Friday"	"105656:17:24"	"104268:03:13"
 "Saturday"	"166486:24:02"	"107223:27:43"
 ```
 
@@ -448,18 +450,20 @@ ORDER BY CASE
 	WHEN day_name = ''Thursday'' THEN 5
 	WHEN day_name = ''Friday'' THEN 6
 	WHEN day_name = ''Saturday'' THEN 7
-	END'                #Custom sorting
+	END                                   # Custom Sorting
+	, member_casual'
 	, 'values (''casual''), (''member'')')
-	AS (day_name text, member interval, casual interval)
+	AS (day_name text, casual interval, member interval)
 
 RESULT:
-day_name             member                  casual
+
+day_name             casual                  member
 "Sunday"	"00:23:56.275441"	"00:13:26.969805"
 "Monday"	"00:20:14.923192"	"00:11:28.075472"
-"Tuesday"	"00:11:34.009075"	"00:18:18.348372"
-"Wednesday"	"00:11:29.778405"	"00:17:26.867913"
+"Tuesday"	"00:18:18.348372"	"00:11:34.009075"
+"Wednesday"	"00:17:26.867913"	"00:11:29.778405"
 "Thursday"	"00:18:05.289257"	"00:11:33.601305"
-"Friday"	"00:12:03.165798"	"00:20:05.579185"
+"Friday"	"00:20:05.579185"	"00:12:03.165798"
 "Saturday"	"00:23:21.69237"	"00:13:27.765472"
 ```
 
@@ -472,7 +476,7 @@ FROM fullyear1
 GROUP BY month_name, member_casual
 ORDER BY array_position(array[''January'',''February'',''March'',''April'',
 			  ''May'',''June'', ''July'',''August'',''September'',''October''
-			  ,''November'',''December''],month_name)   #Custom sorting
+			  ,''November'',''December''],month_name)                             #Custom sorting
 			   , member_casual'
 	, 'values (''casual''), (''member'')')
 	AS (month_name text, casual bigint, member bigint)
