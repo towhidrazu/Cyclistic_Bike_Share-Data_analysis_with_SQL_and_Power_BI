@@ -373,7 +373,7 @@ Member: 00:12:04.529509
 
 ```
 
-***From the following queries, we will generate query data in tabular format. As we are using PostgreSQL, so To do that we have to execute follwing code chunk to enable crosstab function.
+***From the following queries, we will generate query data in tabular format. As we are using PostgreSQL, so To do that we have to execute follwing code chunk to enable crosstab function.***
 
 ```
 create extension tablefunc
