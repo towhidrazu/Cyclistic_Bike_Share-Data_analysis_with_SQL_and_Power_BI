@@ -372,6 +372,15 @@ Casual: 00:20:37.304156
 Member: 00:12:04.529509
 
 ```
+
+***From the following queries, we will generate query data in tabular format. As we are using PostgreSQL, so To do that we have to execute follwing code chunk to enable crosstab function.
+
+```
+create extension tablefunc
+
+```
+
+
 **What is the total numbers of rides of both types of users based on the day of the week?**
 
 ```
