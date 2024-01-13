@@ -80,7 +80,7 @@ For completion of the business task our effort should be answering the following
 - What is the total and average ride duration of the both types of users?
 - What is the total numbers of rides, total and average ride duration of both types of users based on the day of the week and based of the month of the year?
 - What is the numbers of riders per hour for both types of users?
-- What is the peak hour for both types of users?
+- What are the peak hours for both types of users?
 - What are mostly used stations for both types of users?
 - Which bikes are preferred  by the users?
 - Between weekdays and weekend when both types of users use bikes most?
@@ -608,7 +608,73 @@ Note: Here as we are seeing the riders count based of hour for full year so no. 
 use data visualization section to see a trand of no. of riders based on hour for both casual and member.
 ```
 
-** What is the peak hour for both types of users?**
+** What are the peak hours for casual riders?**
 
 ```
+SELECT
+  DATE_TRUNC('hour', started_at) AS hour_start, member_casual as user_type,
+  COUNT(*) AS "No._of_rides"
+FROM
+  fullyear1
+GROUP BY
+  member_casual, hour_start
+HAVING
+	COUNT(*)> '1500' AND member_casual = 'casual'
+ORDER BY
+  member_casual,COUNT(*) DESC, hour_start
+
+
+
+RESULT:
+     start_time         user_type     No._of_rides
+"2023-06-10 16:00:00"	"casual"	1706
+"2023-06-10 15:00:00"	"casual"	1626
+"2023-08-19 15:00:00"	"casual"	1610
+"2023-06-24 13:00:00"	"casual"	1554
+"2023-06-10 13:00:00"	"casual"	1540
+"2023-08-12 14:00:00"	"casual"	1535
+"2023-08-12 15:00:00"	"casual"	1534
+"2023-08-12 13:00:00"	"casual"	1533
+"2023-08-19 16:00:00"	"casual"	1523
+"2023-06-24 14:00:00"	"casual"	1513
+"2023-07-29 16:00:00"	"casual"	1506
+"2023-06-24 16:00:00"	"casual"	1504
+
+NOTE: For casual riders there are 12 incidents wehere total ride per hour is above 1500. And the popular hours are mostly afternoon time ranging from 1:00pm to 4:00pm
 ```
+
+** What are the peak hours for member riders?**
+
+```
+SELECT
+  DATE_TRUNC('hour', started_at) AS hour_start, member_casual as user_type,
+  COUNT(*) AS "No._of_rides"
+FROM
+  fullyear1
+GROUP BY
+  member_casual, hour_start
+HAVING
+	COUNT(*)> '1500' AND member_casual = 'member'
+ORDER BY
+  member_casual, COUNT(*) DESC, hour_start
+
+
+
+RESULT:
+     start_time         user_type     No._of_rides
+"2023-08-29 17:00:00"	"member"	2188
+"2023-08-01 17:00:00"	"member"	2142
+"2023-08-02 17:00:00"	"member"	2141
+"2023-08-08 17:00:00"	"member"	2129
+"2023-07-19 17:00:00"	"member"	2126
+"2023-09-20 17:00:00"	"member"	2101
+"2023-08-16 17:00:00"	"member"	2097
+"2023-07-18 17:00:00"	"member"	2070
+"2023-08-09 17:00:00"	"member"	2042
+"2023-08-30 17:00:00"	"member"	2035
+....                     ....           ...
+Total rows: 10 of 158
+
+NOTE: For member riders there are 158 incidents wehere total ride per hour is above 1500. And the popular hours are mostly 5:00pm which is office closing time. Also No._of_riders are far higher then casual member. It can be inferred that cyclistic's bike are widely used by members for going back to homr from work.
+```
+
