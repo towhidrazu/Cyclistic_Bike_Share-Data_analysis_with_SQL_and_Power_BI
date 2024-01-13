@@ -640,7 +640,8 @@ RESULT:
 "2023-07-29 16:00:00"	"casual"	1506
 "2023-06-24 16:00:00"	"casual"	1504
 
-NOTE: For casual riders there are 12 incidents wehere total ride per hour is above 1500. And the popular hours are mostly afternoon time ranging from 1:00pm to 4:00pm
+NOTE: For casual riders there are 12 incidents wehere total ride per hour is above 1500. And the popular hours are
+mostly afternoon time ranging from 1:00pm to 4:00pm
 ```
 
 ** What are the peak hours for member riders?**
@@ -675,6 +676,8 @@ RESULT:
 ....                     ....           ...
 Total rows: 10 of 158
 
-NOTE: For member riders there are 158 incidents wehere total ride per hour is above 1500. And the popular hours are mostly 5:00pm which is office closing time. Also No._of_riders are far higher then casual member. It can be inferred that cyclistic's bike are widely used by members for going back to homr from work.
+NOTE: For member riders there are 158 incidents wehere total ride per hour is above 1500. And the popular hours are
+mostly 5:00pm which is office closing time. Also No._of_riders are far higher then casual member. It can be
+inferred that cyclistic's bike are widely used by members for going back to homr from work.
 ```
 
