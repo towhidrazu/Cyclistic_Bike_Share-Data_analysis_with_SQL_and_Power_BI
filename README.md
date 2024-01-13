@@ -573,24 +573,36 @@ month_name           casual                  member
 ** What is the numbers of riders per hour for both types of users?**
 
 ```
-SELECT
-  DATE_TRUNC('hour', started_at) AS hour_start, member_casual,
-  COUNT(*) AS "No._of_rides"
-FROM
-  fullyear1
-GROUP BY
-  member_casual, hour_start
-ORDER BY
-  hour_start, member_casual
+SELECT *
+FROM CROSSTAB(
+	'SELECT
+	  DATE_TRUNC(''hour'', started_at) AS hour_start, member_casual,
+	  COUNT(*) AS "No._of_rides"
+	FROM
+	  fullyear1
+	GROUP BY
+	  member_casual, hour_start
+	ORDER BY
+	  hour_start, member_casual'
+	, 'values(''casual''),(''member'')')
+	AS (hour_start timestamp without time zone, casual bigint, member bigint)
+	
 
 RESULT:
+      hour_start       casual member
+"2022-10-01 00:00:00"	303	235
+"2022-10-01 01:00:00"	261	157
+"2022-10-01 02:00:00"	151	100
+"2022-10-01 03:00:00"	79	75
+"2022-10-01 04:00:00"	40	25
+"2022-10-01 05:00:00"	39	64
+"2022-10-01 06:00:00"	80	155
+"2022-10-01 07:00:00"	133	260
+"2022-10-01 08:00:00"	233	428
+"2022-10-01 09:00:00"	435	590
+.....                   ...     ...
 
-"2022-10-01 00:00:00"	"casual"	303
-"2022-10-01 00:00:00"	"member"	235
-"2022-10-01 01:00:00"	"casual"	261
-"2022-10-01 01:00:00"	"member"	157
-"2022-10-01 02:00:00"	"casual"	151
-.....                      ....          ..
+# Total rows: 10 of 8758
 
-# Total rows: 5 of 17494
+Note: Here as we are seeing the riders count based of hour for full year so no. of rows are higher. In next step we will use data visualization section to see a trand of no. of riders based on hour for both casual and member.
 ```
