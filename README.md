@@ -81,7 +81,7 @@ For completion of the business task our effort should be answering the following
 - What is the total numbers of rides, total and average ride duration of both types of users based on the day of the week and based of the month of the year?
 - What is the numbers of riders per hour for both types of users?
 - What are the peak hours for both types of users?
-- What are mostly used stations for both types of users?
+- What are the mostly used starting and ending stations for both types of users?
 - Which bikes are preferred  by the users?
 - Between weekdays and weekend when both types of users use bikes most?
 
@@ -681,10 +681,67 @@ mostly 5:00pm which is office closing time. Also No._of_riders are far higher th
 inferred that cyclistic's bike are widely used by members for going back to homr from work.
 ```
 
-**What are mostly used stations for both types of users?**
+**What are the mostly used starting stations for casual users?**
 
 ```
+SELECT start_station_name, member_casual as types_of_rides, COUNT(*) AS no_of_rides
+FROM fullyear1
+WHERE start_station_name IS NOT NULL
+GROUP BY start_station_name, member_casual
+HAVING member_casual = 'casual' AND COUNT(*) > '10000'
+ORDER BY COUNT(*) DESC
+
 
 RESULT:
+
+      start_station_name               types_of_rides  no_of_rides
+"Streeter Dr & Grand Ave"	        "casual"	47227
+"DuSable Lake Shore Dr & Monroe St"	"casual"	30709
+"Michigan Ave & Oak St"	                "casual"	22873
+"Millennium Park"	                "casual"	20701
+"DuSable Lake Shore Dr & North Blvd"	"casual"	20439
+"Shedd Aquarium"			"casual"	17923
+"Theater on the Lake"			"casual"	16467
+"Dusable Harbor"			"casual"	14805
+"Wells St & Concord Ln"			"casual"	12727
+"Montrose Harbor"			"casual"	11903
+"Adler Planetarium"			"casual"	11728
+"Indiana Ave & Roosevelt Rd"		"casual"	11602
+"Clark St & Armitage Ave"		"casual"	11316
+"Clark St & Lincoln Ave"		"casual"	11061
+"Clark St & Elm St"			"casual"	10999
+"Wilton Ave & Belmont Ave"		"casual"	10716
+"Michigan Ave & 8th St"			"casual"	10508
+"Clark St & Newport St"			"casual"	10028
+"Wells St & Elm St"			"casual"	10007
+```
+
+**What are the mostly used starting stations for member riders?**
+
+```
+SELECT start_station_name, member_casual as types_of_rides, COUNT(*) AS no_of_rides
+FROM fullyear1
+WHERE start_station_name IS NOT NULL
+GROUP BY start_station_name, member_casual
+HAVING member_casual = 'member' AND COUNT(*) > '10000'
+ORDER BY COUNT(*) DESC
+
+RESULT:
+
+start_station_name               types_of_rides  no_of_rides
+"Kingsbury St & Kinzie St"	"member"	25075
+"Clark St & Elm St"	     	"member"	24466
+"Clinton St & Washington Blvd"	"member"	24234
+"Wells St & Concord Ln"		"member"	21048
+"University Ave & 57th St"	"member"	20747
+"Wells St & Elm St"		"member"	19849
+"Ellis Ave & 60th St"		"member"	19756
+"Clinton St & Madison St"	"member"	19189
+"Loomis St & Lexington St"	"member"	19166
+"Broadway & Barry Ave"		"member"	18659
+"State St & Chicago Ave"	"member"	17986
+"Streeter Dr & Grand Ave"	"member"	17222
+...                                ...           ...
+Total rows: 12 of 106
 
 ```
