@@ -569,3 +569,28 @@ month_name           casual                  member
 "December"	"00:13:24.022904"	"00:10:20.247116"
 
 ```
+
+** What is the numbers of riders per hour for both types of users?**
+
+```
+SELECT
+  DATE_TRUNC('hour', started_at) AS hour_start, member_casual,
+  COUNT(*) AS "No._of_rides"
+FROM
+  fullyear1
+GROUP BY
+  member_casual, hour_start
+ORDER BY
+  hour_start, member_casual
+
+RESULT:
+
+"2022-10-01 00:00:00"	"casual"	303
+"2022-10-01 00:00:00"	"member"	235
+"2022-10-01 01:00:00"	"casual"	261
+"2022-10-01 01:00:00"	"member"	157
+"2022-10-01 02:00:00"	"casual"	151
+.....                      ....          ..
+
+# 
+```
