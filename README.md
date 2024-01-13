@@ -607,3 +607,8 @@ RESULT:
 Note: Here as we are seeing the riders count based of hour for full year so no. of rows are higher. In next step we will
 use data visualization section to see a trand of no. of riders based on hour for both casual and member.
 ```
+
+** What is the peak hour for both types of users?**
+
+```
+```
