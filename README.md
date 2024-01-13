@@ -681,3 +681,10 @@ mostly 5:00pm which is office closing time. Also No._of_riders are far higher th
 inferred that cyclistic's bike are widely used by members for going back to homr from work.
 ```
 
+**What are mostly used stations for both types of users?**
+
+```
+
+RESULT:
+
+```
