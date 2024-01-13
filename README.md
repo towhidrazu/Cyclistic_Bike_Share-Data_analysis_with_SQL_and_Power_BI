@@ -728,7 +728,7 @@ ORDER BY COUNT(*) DESC
 
 RESULT:
 
-start_station_name               types_of_rides  no_of_rides
+  start_station_name          types_of_rides  no_of_rides
 "Kingsbury St & Kinzie St"	"member"	25075
 "Clark St & Elm St"	     	"member"	24466
 "Clinton St & Washington Blvd"	"member"	24234
@@ -744,4 +744,71 @@ start_station_name               types_of_rides  no_of_rides
 ...                                ...           ...
 Total rows: 12 of 106
 
+```
+
+
+**What are the mostly used ending stations for casual users?**
+
+```
+SELECT end_station_name, member_casual as types_of_rides, COUNT(*) AS no_of_rides
+FROM fullyear1
+WHERE end_station_name IS NOT NULL
+GROUP BY end_station_name, member_casual
+HAVING member_casual = 'casual' AND COUNT(*) > '10000'
+ORDER BY COUNT(*) DESC
+
+RESULT:
+
+  end_station_name                  types_of_rides  no_of_rides
+"Streeter Dr & Grand Ave"		"casual"	50727
+"DuSable Lake Shore Dr & Monroe St"	"casual"	27896
+"Michigan Ave & Oak St"	 		"casual"	24094
+"DuSable Lake Shore Dr & North Blvd"	"casual"	23388
+"Millennium Park"			"casual"	22731
+"Theater on the Lake"			"casual"	17825
+"Shedd Aquarium"			"casual"	15867
+"Dusable Harbor"			"casual"	13401
+"Wells St & Concord Ln"			"casual"	12397
+"Montrose Harbor"			"casual"	11663
+"Clark St & Lincoln Ave"		"casual"	11641
+"Clark St & Armitage Ave"		"casual"	11609
+"Indiana Ave & Roosevelt Rd"		"casual"	10742
+"Clark St & Elm St"			"casual"	10501
+"Sheffield Ave & Waveland Ave"		"casual"	10430
+"Broadway & Barry Ave"			"casual"	10244
+"Wabash Ave & Grand Ave"		"casual"	10231
+"Adler Planetarium"			"casual"	10201
+"Clark St & Newport St"			"casual"	10159
+"Michigan Ave & Washington St"		"casual"	10054
+"Wells St & Elm St"			"casual"	10035
+```
+
+
+**What are the mostly used ending stations for member riders?**
+
+```
+SELECT end_station_name, member_casual as types_of_rides, COUNT(*) AS no_of_rides
+FROM fullyear1
+WHERE end_station_name IS NOT NULL
+GROUP BY end_station_name, member_casual
+HAVING member_casual = 'member' AND COUNT(*) > '10000'
+ORDER BY COUNT(*) DESC
+
+RESULT:
+
+ end_station_name                  types_of_rides  no_of_rides
+"Kingsbury St & Kinzie St"	"member"	25520
+"Clinton St & Washington Blvd"	"member"	25396
+"Clark St & Elm St"		"member"	24186
+"Wells St & Concord Ln"		"member"	22000
+"University Ave & 57th St"	"member"	20863
+"Clinton St & Madison St"	"member"	20602
+"Wells St & Elm St"		"member"	19836
+"Ellis Ave & 60th St"		"member"	19489
+"Loomis St & Lexington St"	"member"	19207
+"Broadway & Barry Ave"		"member"	18987
+"State St & Chicago Ave"	"member"	18528
+"Canal St & Adams St"		"member"	17621
+ ....                            ...              ...
+Total rows: 12 of 107
 ```
