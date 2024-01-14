@@ -837,3 +837,10 @@ RESULT:
 ## Step 5: Share
 
 [Back to top](#introduction)
+
+In analyze phase we tried to answer business questions through SQL queries using PostgresSQL.
+
+Now in share phase we will try to share those insights through sophisticated and polished in order to effectively communicate to the executive team. 
+
+For the purpose of creating impactful visualization we will use MS PowerBI, which is a very useful business intelligence tool used for data visualization and other related purpose around the world.
+
