@@ -812,3 +812,24 @@ RESULT:
  ....                            ...              ...
 Total rows: 12 of 107
 ```
+
+**Which bikes are preferred by the users?**
+
+```
+SELECT *
+FROM CROSSTAB('
+	SELECT rideable_type, member_casual AS type_of_rider, COUNT(*) AS no_of_rides
+	FROM fullyear1
+	GROUP BY rideable_type, member_casual
+	ORDER BY rideable_type, member_casual'
+	, 'values (''casual''), (''member'')')
+	AS (rideable_type text, casual bigint, member bigint)
+
+RESULT:
+
+ rideable_type   casual  member
+"classic_bike"	833923	1737635
+"docked_bike"	96905	 null
+"electric_bike"	1146559	1841737
+```
+
