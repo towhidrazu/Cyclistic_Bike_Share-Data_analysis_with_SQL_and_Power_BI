@@ -83,7 +83,6 @@ For completion of the business task our effort should be answering the following
 - What are the peak hours for both types of users?
 - What are the mostly used starting and ending stations for both types of users?
 - Which bikes are preferred  by the users?
-- Between weekdays and weekend when both types of users use bikes most?
 
 
 ## Step 2: Prepare
@@ -833,32 +832,7 @@ RESULT:
 "electric_bike"	1146559	1841737
 ```
 
-**Between weekdays and weekend when both types of users use bikes most?**
 
-```
-SELECT *
-FROM CROSSTAB('
-	SELECT day_name, member_casual, COUNT(*)
-	FROM fullyear1
-	GROUP BY day_name, member_casual
-	ORDER BY ARRAY_POSITION(ARRAY[''Saturday'',''Sunday'',''Monday'',
-				''Tuesday'',''Wednesday'',''Thursday'',''Friday''], day_name)
-				, member_casual'
-			  , 'values(''member''), (''casual'')')
-	AS (day_name text, member bigint, casual bigint)
-
-RESULT:
-
- day_name        member casual
-"Saturday"	477867	427591
-"Sunday"	400790	337183
-"Monday"	485185	236159
-"Tuesday"	552590	239686
-"Wednesday"	569899	248298
-"Thursday"	573983	272968
-"Friday"	519058	315502
-
-```
 
 ## Step 5: Share
 
