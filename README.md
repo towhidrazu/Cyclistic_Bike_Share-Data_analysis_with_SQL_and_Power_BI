@@ -43,7 +43,9 @@ Consumers can purchase access to Cylictic bikes using three options: classic_bik
 
 Data-privacy issues prohibit us from using riders’ personally identifiable information. For this reason we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
-_The case study follows the six step data analysis process:_
+
+
+***The case study follows the six step data analysis process:***
 
 ### ❓ [Ask](#step-1-ask)
 ### 💻 [Prepare](#step-2-prepare)
