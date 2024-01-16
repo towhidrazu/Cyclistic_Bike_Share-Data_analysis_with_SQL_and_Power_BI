@@ -851,3 +851,5 @@ Now in share phase we will try to share those insights through sophisticated and
 
 For the purpose of creating impactful visualization we will use MS PowerBI, which is a very useful business intelligence tool used for data visualization and other related purpose around the world.
 
+
+![Q1](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/q1.png)
