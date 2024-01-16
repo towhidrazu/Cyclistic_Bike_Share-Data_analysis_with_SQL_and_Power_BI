@@ -45,7 +45,8 @@ Data-privacy issues prohibit us from using riders’ personally identifiable inf
 
 
 
-***The case study follows the six step data analysis process:***
+
+###The case study follows the six step data analysis process:
 
 ### ❓ [Ask](#step-1-ask)
 ### 💻 [Prepare](#step-2-prepare)
