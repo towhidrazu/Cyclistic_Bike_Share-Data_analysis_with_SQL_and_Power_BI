@@ -37,7 +37,11 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 * Cyclistic marketing analytics team: A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
 
 * Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
-Consumers can purchase access to Cylictic bikes using three options:
+Consumers can purchase access to Cylictic bikes using three options: classic_bike, docked_bike & electric_bike
+
+### Limitations of study
+
+Data-privacy issues prohibit us from using riders’ personally identifiable information. For this reason we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
 _The case study follows the six step data analysis process:_
 
