@@ -854,6 +854,6 @@ For the purpose of creating impactful visualization we will use MS PowerBI, whic
 
 **What is the total numbers of rides of the both types of users?**
 
-![Q1](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/q1.png)
+![v1](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v1.png)
 
-Comment: From the above pie chart it's clearly visible that our target customer 'Casual' riders comprise 37% (2.08 million ) of total rides.
+Comment: From the above pie chart it is clearly visible that our target customer 'Casual' riders comprise 37% (2.08 million ) of total rides.
