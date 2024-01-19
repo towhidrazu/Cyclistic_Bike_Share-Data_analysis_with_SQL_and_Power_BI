@@ -982,7 +982,7 @@ Comment:
 
 
 
-**>> Which bikes are preferred by the users?**
+**Which bikes are preferred by the users?**
 
 
 Comment:
