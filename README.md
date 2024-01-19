@@ -121,7 +121,7 @@ Cyclistic service area or if riders have purchased multiple single passes.
 
 * Source of data: [Cyclistic Trip Data Download](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
-***For the purpose of this case study we will use PostgreSQL. Installation procesure of PostgreSQL & pgAdmin can be found in my [this](https://youtu.be/bk1XawUBQ-U) youtube video.***
+***For the purpose of this case study we will use PostgreSQL. Installation procesure of PostgreSQL & pgAdmin can be found in my [this youtube video.](https://youtu.be/bk1XawUBQ-U)***
 
 
 **CREATING TABLE OF 13 COLUMNS TO IMPORT DATA FROM CSV FILES TO POSTGRE SQL**
