@@ -580,7 +580,7 @@ month_name           casual                  member
 
 ```
 
-** What is the numbers of riders per hour for both types of users?**
+**What is the numbers of riders per hour for both types of users?**
 
 ```
 SELECT *
@@ -618,7 +618,7 @@ Note: Here as we are seeing the riders count based of hour for full year so no. 
 use data visualization section to see a trand of no. of riders based on hour for both casual and member.
 ```
 
-** What are the peak hours for casual riders?**
+**What are the peak hours for casual riders?**
 
 ```
 SELECT
@@ -654,7 +654,7 @@ NOTE: For casual riders there are 12 incidents wehere total ride per hour is abo
 mostly afternoon time ranging from 1:00pm to 4:00pm
 ```
 
-** What are the peak hours for member riders?**
+**What are the peak hours for member riders?**
 
 ```
 SELECT
@@ -935,20 +935,20 @@ Comment:
 
 
 
-** What is the numbers of riders per hour for both types of users?**
+**What is the numbers of riders per hour for both types of users?**
 
 
 Comment:
 
 
 
-** What are the peak hours for casual riders?**
+**What are the peak hours for casual riders?**
 
 
 Comment:
 
 
-** What are the peak hours for member riders?**
+**What are the peak hours for member riders?**
 
 
 Commnet:
@@ -982,7 +982,7 @@ Comment:
 
 
 
-**Which bikes are preferred by the users?**
+***Which bikes are preferred by the users?**
 
 
 Comment:
