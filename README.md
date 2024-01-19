@@ -867,3 +867,124 @@ For the purpose of creating impactful visualization we will use MS PowerBI, whic
 ![v1](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v1.png)
 
 Comment: From the above pie chart it is clearly visible that our target customer 'Casual' riders comprise 37% (2.08 million ) of total rides.
+
+
+
+**What is the total ride duration of the both types of users?**
+
+
+Comment:
+
+
+**What is the average ride duration of the both types of users?**
+
+
+
+Comment: 
+
+
+**What is the total numbers of rides of both types of users based on the day of the week?**
+
+
+
+Comment: 
+
+
+
+**What is the total rides duration of both types of users based on the day of the week?**
+
+
+
+Comment: 
+
+
+
+**What is the average rides duration of both types of users based on the day of the week?**
+
+
+
+Comment: 
+
+
+
+
+**What is the total numbers of rides of both types of users based on the months of the year?**
+
+
+
+Comment:
+
+
+
+
+**What is the total rides duration of both types of users based on the months of the year?**
+
+
+
+
+Comment: 
+
+
+
+
+**What is the average rides duration of both types of users based on the months of the year?**
+
+
+
+Comment: 
+
+
+
+** What is the numbers of riders per hour for both types of users?**
+
+
+Comment:
+
+
+
+** What are the peak hours for casual riders?**
+
+
+Comment:
+
+
+** What are the peak hours for member riders?**
+
+
+Commnet:
+
+
+
+**What are the mostly used starting stations for casual users?**
+
+
+Comment:
+
+
+
+
+**What are the mostly used starting stations for member riders?**
+
+
+Commnet:
+
+**What are the mostly used ending stations for casual users?**
+
+
+Commnet: 
+
+
+
+**What are the mostly used ending stations for member riders?**
+
+
+Comment:  
+
+
+
+**Which bikes are preferred by the users?**
+
+
+Comment:
+
+
