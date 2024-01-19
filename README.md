@@ -855,6 +855,12 @@ Now in share phase we will try to share those insights through sophisticated and
 
 For the purpose of creating impactful visualization we will use MS PowerBI, which is a very useful business intelligence tool used for data visualization and other related purpose around the world.
 
+**We will load table name fullyear1.csv (created from table 'fullyear1'created in process phase) into powerBI to prepare our visualization.**
+
+***Alternatively we could directly connect our PostgreSQL server wih powerBI to create a direct quesry connection. Procedure to do that is described in my [this](https://youtu.be/dIIyoteMr5w) youtube video. ***
+
+
+
 
 **What is the total numbers of rides of the both types of users?**
 
