@@ -869,7 +869,11 @@ For the purpose of creating impactful visualization we will use MS PowerBI, whic
 Comment: From the above pie chart it is clearly visible that our target customer 'Casual' riders comprise 37% (2.08 million ) of total rides.
 
 
-***As ride_duration is given in the table as time value we will convert timevalue into decimal hourvalue using DAX function: hour_value = HOUR(fullyear1[ride_length]) + MINUTE(fullyear1[ride_length])/60 + SECOND(fullyear1[ride_length])/3600***
+***As ride_duration is given in the table as time value we will convert timevalue into decimal hourvalue using DAX function:***
+```
+hour_value = HOUR(fullyear1[ride_length]) + MINUTE(fullyear1[ride_length])/60 + SECOND(fullyear1[ride_length])/3600
+```
+
 
 **What is the total ride duration of the both types of users?**
 ![v2](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v2.png)
