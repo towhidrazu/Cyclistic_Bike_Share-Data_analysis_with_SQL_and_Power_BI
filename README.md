@@ -899,7 +899,7 @@ Comment:
 
 
 **What is the total rides duration of both types of users based on the day of the week?**
-
+![v5](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v5.png)
 
 
 Comment: 
@@ -907,7 +907,7 @@ Comment:
 
 
 **What is the average rides duration of both types of users based on the day of the week?**
-
+![v6](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v6.png)
 
 
 Comment: 
@@ -916,7 +916,7 @@ Comment:
 
 
 **What is the total numbers of rides of both types of users based on the months of the year?**
-
+![v7](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v7.png)
 
 
 Comment:
@@ -925,7 +925,7 @@ Comment:
 
 
 **What is the total rides duration of both types of users based on the months of the year?**
-
+![v8](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v8.png)
 
 
 
@@ -935,7 +935,7 @@ Comment:
 
 
 **What is the average rides duration of both types of users based on the months of the year?**
-
+![v9](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v9.png)
 
 
 Comment: 
