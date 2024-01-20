@@ -882,6 +882,8 @@ Comment:
 
 Comment: 
 
+***From next visual we have to show information sorted by specific order of days of a week or months of a year. Power BI won't sort the day or months as per their original order. Rather it srots those alphabetically. So we have to follow custom column set rule in Power BI. Procedure to do that is described in my [this youtube video](https://youtu.be/dIIyoteMr5w](https://youtu.be/Ds4b5taeFw8).***
+
 
 **What is the total numbers of rides of both types of users based on the day of the week?**
 ![v4](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v4.png)
