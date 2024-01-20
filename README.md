@@ -871,20 +871,20 @@ Comment: From the above pie chart it is clearly visible that our target customer
 
 
 **What is the total ride duration of the both types of users?**
-
+![v2](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v2.png)
 
 Comment:
 
 
 **What is the average ride duration of the both types of users?**
-
+![v3](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v3.png)
 
 
 Comment: 
 
 
 **What is the total numbers of rides of both types of users based on the day of the week?**
-
+![v4](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v4.png)
 
 
 Comment: 
