@@ -963,7 +963,7 @@ Commnet:
 
 
 **What are the mostly used starting stations for casual users?**
-
+![v13](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v13.png)
 
 Comment:
 
@@ -971,26 +971,26 @@ Comment:
 
 
 **What are the mostly used starting stations for member riders?**
-
+![v14](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v14.png)
 
 Commnet:
 
 **What are the mostly used ending stations for casual users?**
-
+![v15](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v15.png)
 
 Commnet: 
 
 
 
 **What are the mostly used ending stations for member riders?**
-
+![v16](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v16.png)
 
 Comment:  
 
 
 
 **Which bikes are preferred by the users?**
-
+![v17](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v17.png)
 
 Comment:
 
