@@ -43,7 +43,7 @@ Consumers can purchase access to Cylictic bikes using three options: classic_bik
 
 Data-privacy issues prohibit us from using riders’ personally identifiable information. For this reason we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
-
+For casual riders there are approximately 331K record where start_station_id and start_station_name are missing. For member riders this number is approximately 538K. This is also the case for end_station_id and end_station_name. Due to this at time determining top used station we will exclude those null valued record.
 
 
 ### The case study follows the six step data analysis process:
