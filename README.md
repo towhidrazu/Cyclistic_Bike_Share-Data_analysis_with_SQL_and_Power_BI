@@ -580,7 +580,7 @@ month_name           casual                  member
 
 ```
 
-**What is the numbers of riders per hour for both types of users?**
+**What is the numbers of riders in each hour throughout the year for both types of users?**
 
 ```
 SELECT *
@@ -939,13 +939,6 @@ Comment:
 
 
 Comment: 
-
-
-
-**What is the numbers of riders per hour for both types of users?**
-
-
-Comment:
 
 
 
