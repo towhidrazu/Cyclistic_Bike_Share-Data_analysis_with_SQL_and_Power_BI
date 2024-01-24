@@ -940,7 +940,10 @@ Comment:
 
 Comment: 
 
-
+***Using following DAX formual we will extract time value from started_at column and convert this value to text to generate our desired visulas***
+```
+TimeColumnText = FORMAT('fullyear1'[started_at], "HH:mm:ss")
+```
 
 **What are the peak hours for casual riders?**
 ![v11](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v11.png)
