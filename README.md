@@ -963,28 +963,25 @@ Commnet: On the other hand usage patter of bikes by members throughout the day s
 **What are the mostly used starting stations for casual users?**
 ![v13](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v13.png)
 
-Comment:
-
 
 
 
 **What are the mostly used starting stations for member riders?**
 ![v14](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v14.png)
 
-Commnet:
+
 
 **What are the mostly used ending stations for casual users?**
 ![v15](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v15.png)
 
-Commnet: 
 
 
 
 **What are the mostly used ending stations for member riders?**
 ![v16](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v16.png)
 
-Comment:  
-
+**Note:**
+For casual riders there are approximately 331K record where start_station_id and start_station_name are missing. For member riders this number is approximately 538K. This is also the case for end_station_id and end_station_name. To determine top station uses accurately, these data are needed.
 
 
 **Which bikes are preferred by the users?**
