@@ -950,7 +950,7 @@ TimeColumnText = FORMAT('fullyear1'[started_at], "HH:mm:ss")
 **What are the peak hours for casual riders?**
 ![v11](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v11.png)
 
-Comment: Chart above depicts that casual riders enjoy theri ride during afternoon time. That emphasises their use of bikes for recreational purpose.
+Comment: Chart above depicts that casual riders enjoy their rides most during afternoon time. That emphasises their use of bikes for recreational purposes.
 
 
 **What are the peak hours for member riders?**
@@ -991,12 +991,16 @@ Comment:Classic bikes are mostly used bikes followed by electric bikes. Docked b
 
 ### Key findings:
 
-* a
-* b
-* c
-* d
-* e
-* f
+* Casual riders comprises 37% (2.08 million) of the total ride.
+* On average casual riders take longer ride (20.62 minutes) than member (12.08 minutes) riders.
+* Members are more active on weekdays (Monday to Friday) and less active on weekend. Whereas casual riders are more active on weekends.
+* Seasons have a huge impact on overall ride taking. Where as the temperature drops less riders are seen and vice versa. Thoug members are seen mentionably in winter season.
+* Summer months are very popular to casual riders.
+* Starting from midday peak hour of using cyclistic's bikes by casual riders are around 6:00pm.
+* Members have 2 significant spikes of using bikes. Around 8:00an in morning and around 6:00pm in afternoon. Those says they use bikes more for commuting to office & back to home.
+* Most popular startings and ending stations for casual riders are Streeter Dr & Grand Ave, DuSable Lake Shore Dr and Michigan Ave & Oak St.
+* Most popular startings and ending stations for members are Kingsbury St & Kinzie St, Clark St & Elm St and Clinton St & Washington Blvd.
+* Top used bikes are classic bikes followed by electric bikes. Docked bikes are least popular with mearly no use by members riders.
 
 
 ## Step 6: Act
