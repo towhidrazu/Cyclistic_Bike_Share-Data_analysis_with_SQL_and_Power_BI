@@ -989,10 +989,23 @@ For casual riders there are approximately 331K record where start_station_id and
 
 Comment:Classic bikes are mostly used bikes followed by electric bikes. Docked bikes are least popular among users where very few are used by casula riders and there's no member user for docked bikes.
 
+### Key findings:
 
-
+* a
+* b
+* c
+* d
+* e
+* f
 
 
 ## Step 6: Act
 
 [Back to top](#introduction)
+
+### My recommendations:
+
+1. a
+2. b
+3. c
+4. d
