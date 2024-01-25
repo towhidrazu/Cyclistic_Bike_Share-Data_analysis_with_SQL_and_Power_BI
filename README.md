@@ -1007,7 +1007,9 @@ Comment:Classic bikes are mostly used bikes followed by electric bikes. Docked b
 
 [Back to top](#introduction)
 
-### My recommendations:
+This step will be carried out by the Cyclistic's executive team, Director of Marketing Lily Moreno based on the analysis of me and Marketing Analytics team.
+
+### My recommendations based on my analysis:
 
 1. a
 2. b
