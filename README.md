@@ -990,7 +990,7 @@ Comment:
 **Which bikes are preferred by the users?**
 ![v17](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v17.png)
 
-Comment:
+Comment:Classic bikes are mostly used bikes followed by electric bikes. Docked bikes are least popular among users where very few are used by casula riders and there's no member user for docked bikes.
 
 
 
