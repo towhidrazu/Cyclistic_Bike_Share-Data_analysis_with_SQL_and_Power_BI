@@ -1011,7 +1011,7 @@ This step will be carried out by the Cyclistic's executive team, Director of Mar
 
 ### My recommendations based on my analysis:
 
-1. Customized ads can be made targeting casual rides 
-2. b
+1. Customized ads can be made targeting casual rides stating the benefits of being a member. Place to post those ads can be top starting and ending stations used by casual riders.
+2. Special discount can be offered 
 3. c
 4. d
