@@ -885,7 +885,7 @@ Comment: In case of total hour of bike using we found that both casual riders an
 ![v3](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v3.png)
 
 
-Comment: 
+Comment: The average ride duration for casual riders is 20.62 minutes, whereas the average ride duration for members is 12.08 minutes. So this can clearly understood that the average trip duration for casual rider is lengthier than that of members. 
 
 ***From next visual we have to show information sorted by specific order of days of a week or months of a year. Power BI won't sort the day or months as per their original order. Rather it srots those alphabetically. So we have to follow custom column set rule in Power BI. Procedure to do that is described in my [this youtube video](https://youtu.be/Ds4b5taeFw8).***
 
@@ -894,7 +894,7 @@ Comment:
 ![v4](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v4.png)
 
 
-Comment: 
+Comment: From the chart above we can see overall members riders took more rides compare to their casual counterpart. But members riders tend to use cyclistic bukes on weekday most wehereas casul riders prefered to ride more on weekend.
 
 
 
@@ -902,7 +902,7 @@ Comment:
 ![v5](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v5.png)
 
 
-Comment: 
+Comment: This chart also depicts the almost same scenario as previous one except the weekends. On weekend we can see on basis of total ride hours, casual riders surpassed member riders.
 
 
 
