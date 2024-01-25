@@ -1011,7 +1011,7 @@ This step will be carried out by the Cyclistic's executive team, Director of Mar
 
 ### My recommendations based on my analysis:
 
-1. a
+1. Customized ads can be made targeting casual rides 
 2. b
 3. c
 4. d
