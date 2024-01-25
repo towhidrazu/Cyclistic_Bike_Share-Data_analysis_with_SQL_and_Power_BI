@@ -910,7 +910,7 @@ Comment: This chart also depicts the almost same scenario as previous one except
 ![v6](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v6.png)
 
 
-Comment: 
+Comment: From chart above we can see average minutes of ride for casual riders are always high compare to member riders. Also tend to go for longer ride for both of users are higher in weekend compare to weekdays.
 
 
 
@@ -919,7 +919,9 @@ Comment:
 ![v7](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v7.png)
 
 
-Comment:
+Comment: From the chart above we can see there's a huge impact of winter season in using cyclistic bike. As November to March see very less rides compare to summer months. As the weather gets warmer, riders take more rides.
+
+Though usages of members are always high compare to the casual. It seems members use cyclisyics bikes to commute to their work.
 
 
 
@@ -929,7 +931,7 @@ Comment:
 
 
 
-Comment: 
+Comment: In case of total ride duration it can be seen that casual riders ride more in summer time that indicates using of bikes by casual riders for recreation in summer time. Whereas in winter months total ride hours for members are larger than that of casual riders.
 
 
 
@@ -938,7 +940,7 @@ Comment:
 ![v9](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v9.png)
 
 
-Comment: 
+Comment: In considering the average ride duration casual riders are always clearly ahead of member riders.
 
 ***Using following DAX formual we will extract time value from started_at column and convert this value to text to generate our desired visulas***
 ```
@@ -948,13 +950,13 @@ TimeColumnText = FORMAT('fullyear1'[started_at], "HH:mm:ss")
 **What are the peak hours for casual riders?**
 ![v11](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v11.png)
 
-Comment:
+Comment: Chart above depicts that casual riders enjoy theri ride during afternoon time. That emphasises their use of bikes for recreational purpose.
 
 
 **What are the peak hours for member riders?**
 ![v12](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v12.png)
 
-Commnet:
+Commnet: On the other hand usage patter of bikes by members throughout the day shows 2 peaks where one is around 8:00 o' clocl in the morning and other one is around 6:00 o' clock in the afternoon. Thus it can be inferred with confidence that most of the cyclistic's member use bikes for commuting to office & back to home.
 
 
 
