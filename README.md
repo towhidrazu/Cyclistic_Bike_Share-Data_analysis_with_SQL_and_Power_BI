@@ -866,7 +866,7 @@ For the purpose of creating impactful visualization we will use MS PowerBI, whic
 
 ![v1](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v1.png)
 
-Comment: From the above pie chart it is clearly visible that our target customer 'Casual' riders comprise 37% (2.08 million ) of total rides.
+Comment: From the above pie chart it is clearly visible that our target customer 'Casual' riders took 37% (2.08 million ) of total rides between October 2022 to September 2023.
 
 
 ***As ride_duration is given in the table as time value we will convert timevalue into decimal hourvalue using DAX function:***
@@ -878,7 +878,7 @@ hour_value = HOUR(fullyear1[ride_length]) + MINUTE(fullyear1[ride_length])/60 + 
 **What is the total ride duration of the both types of users?**
 ![v2](https://github.com/towhidrazu/Cyclistic_Bike_Share/blob/main/v2.png)
 
-Comment:
+Comment: In case of total hour of bike using we found that both casual riders and memebers passed around same time which is a bit more that 700 hours.
 
 
 **What is the average ride duration of the both types of users?**
