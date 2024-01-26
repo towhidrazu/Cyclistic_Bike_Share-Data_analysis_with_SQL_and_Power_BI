@@ -1012,6 +1012,5 @@ This step will be carried out by the Cyclistic's executive team, Director of Mar
 ### My recommendations based on my analysis:
 
 1. Customized ads can be made targeting casual rides stating the benefits of being a member. Place to post those ads can be top starting and ending stations used by casual riders.
-2. Special discount can be offered 
-3. c
-4. d
+2. Special discount can be offered to casul riders to became a cyclistic's member. (For example for a period of time that can be 50%. Also to give a boost those casual riders take longer that average time ride can be given a exclusive 60% discount to become a member.)
+3. Cyclistic point can be intrduced exclusively for annual members. Those can be used to reedem for free parks (like discount on fee). Also this can be advertised more in the stations where casual riders commute most.
