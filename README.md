@@ -236,7 +236,7 @@ FROM fullyear
 Ans: 5674399
 ```
 
-Now I will check whether this dataset contains any duplicate entry based on column 'ride_id'
+Now I will check whether this dataset contains any duplicate entry based on column 'ride_id'.
 
 ```
 SELECT ride_id, COUNT(*)
@@ -249,7 +249,7 @@ Result: null
 # Thus, this dataset doesn't contain any duplicate value.
 ```
 
-Now I will check whether this dataset contains any negative, zero or extremely large ride length (more than 24 hours) value
+Now I will check whether this dataset contains any negative, zero or extremely large ride length (more than 24 hours) value.
 
 ```
 SELECT ride_id, (ended_at - started_at) AS ride_length
@@ -323,7 +323,7 @@ WHERE (ended_at - started_at) BETWEEN '00:00:01' AND '24:00:00'
 ORDER BY started_at) 
 ```
 
-*** Let's have a quick look on first 10 rows of data**
+**Let's have a quick look on first 10 rows of data**
 
 ```
 SELECT *
